@@ -1,0 +1,9 @@
+numpy
+pandas
+openpyxl
+xlsxwriter
+pillow
+matplotlib
+seaborn
+fnmatch2
+tqdm
