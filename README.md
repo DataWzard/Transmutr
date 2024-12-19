@@ -22,7 +22,11 @@
 - **User-Friendly Configuration:**  
   Offers straightforward setup with easily configurable input and output directories, and gracefully handles potential data inconsistencies to provide a seamless user experience.
 
-# Issue: Exception raised when attempting to seek a closed file in ZipFile
+# Setup Steps
+![](https://github.com/DataWzard/Transmutr/blob/main/Steps%20list.jpg)
+
+# Issue: 
+### Exception raised when attempting to seek a closed file in ZipFile
 ```
 Exception:
  Traceback (most recent call last):
