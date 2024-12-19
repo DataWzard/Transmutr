@@ -21,3 +21,26 @@
 
 - **User-Friendly Configuration:**  
   Offers straightforward setup with easily configurable input and output directories, and gracefully handles potential data inconsistencies to provide a seamless user experience.
+
+# Issue: Exception raised when attempting to seek a closed file in ZipFile
+```
+Exception:
+ Traceback (most recent call last):
+   File "C:\path\to\python\Lib\zipfile\__init__.py", line 1940, in __del__
+     self.close()`
+   `File "C:\path\to\python\Lib\zipfile\__init__.py", line 1957, in close
+     self.fp.seek(self.start_dir)
+ ValueError: seek of closed file
+```
+
+ Explanation:
+ This exception occurs when the `ZipFile` object tries to seek within a file that has already been closed.
+ It typically happens when the file is deleted or closed prematurely, before completing the file operations.
+ This can be caused by:
+ - Interruptions during file handling
+ - Resource management issues, such as processing large data without proper cleanup
+
+ Solution:
+ Ensure the `ZipFile` object is explicitly closed before it is deleted to prevent the `seek of closed file` error.
+ * If the issue persists, try shutting down the kernel and restarting it.
+   * *This can help resolve any lingering memory or resource issues that might be affecting the file handling.*
