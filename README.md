@@ -25,7 +25,7 @@
 # Setup Steps
 ![](https://github.com/DataWzard/Transmutr/blob/main/Steps%20list.jpg)
 
-# Issue: 
+# Issue(s): 
 ### Exception raised when attempting to seek a closed file in ZipFile
 ```
 Exception:
