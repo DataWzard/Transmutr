@@ -7,3 +7,4 @@ matplotlib
 seaborn
 fnmatch2
 tqdm
+BytesIO
