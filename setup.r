@@ -7,7 +7,7 @@ if (!requireNamespace("IRkernel", quietly = TRUE)) {
 IRkernel::installspec()  # Register IRkernel with Jupyter
 
 # Install necessary R packages for the project
-packages <- c("dplyr", "ggplot2", "tidyr", "readr", "data.table", "readxl", "gridExtra", "broom", "fmsb", "hexbin", "png", "RColorBrewer", "progress")
+packages <- c("dplyr", "ggplot2", "tidyr", "readr", "data.table", "readxl", "gridExtra", "broom", "fmsb", "hexbin", "png", "RColorBrewer", "progress", "scales")
 
 # Install any missing packages
 missing_packages <- packages[!(packages %in% installed.packages()[,"Package"])]
